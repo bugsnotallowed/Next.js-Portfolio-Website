@@ -43,7 +43,7 @@ const Hero = () => {
             <a href="#about">
               <MagicButton title="Show My Work" icon={<FaLocationArrow />} />
             </a>
-            <a href="">
+            <a href="@/components/data/IEEE_Resume.pdf" download={"Resume.pdf"}>
               <MagicButton title="Download Resume" icon={<FaDownload />} />
             </a>
           </div>
