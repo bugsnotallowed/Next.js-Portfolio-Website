@@ -1,9 +1,13 @@
 import React from "react";
+import Image from "next/image";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
+import profile from "..profilepic.png";
+
+//let profile = "@/components/public/profilepic.png";
 
 const Hero = () => {
   return (
@@ -25,29 +29,37 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            MY Personal Portfolio - Dynamic Web Magic with Next.js
-          </h2>
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
-          />
+      <div className="flex flex-row">
+        <div className="flex justify-center relative my-20 z-10">
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+            <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+              My Personal Portfolio - Dynamic Web Magic with Next.js
+            </h2>
+            <TextGenerateEffect
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+              words="Transforming Concepts into Seamless Experiences"
+            />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hello, I'm Adarsh Gupta. A Full Stack Web Developer.
-          </p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+              Hello, I'm Adarsh Gupta. A Full Stack Web Developer.
+            </p>
 
-          <div className="flex flex-row gap-3">
-            <a href="#about">
-              <MagicButton title="Show My Work" icon={<FaLocationArrow />} />
-            </a>
-            <a href="@/components/data/IEEE_Resume.pdf" download={"Resume.pdf"}>
-              <MagicButton title="Download Resume" icon={<FaDownload />} />
-            </a>
+            <div className="flex flex-row gap-3">
+              <a href="#about">
+                <MagicButton title="Show My Work" icon={<FaLocationArrow />} />
+              </a>
+              <a
+                href="@/components/data/IEEE_Resume.pdf"
+                download={"Resume.pdf"}
+              >
+                <MagicButton title="Download Resume" icon={<FaDownload />} />
+              </a>
+            </div>
           </div>
         </div>
+        {/* <div className="w-full lg:w-1/2 lg:p-8 border-red-500">
+          <Image src={profile} alt="profile pic" />
+        </div> */}
       </div>
     </div>
   );
