@@ -43,10 +43,18 @@ const Hero = () => {
 
           <div className="flex flex-row gap-3">
             <a href="#about">
-              <MagicButton title="Show My Work" icon={<FaLocationArrow />} />
+              <MagicButton
+                title="Show My Work"
+                icon={<FaLocationArrow />}
+                position=""
+              />
             </a>
             <a href="@/components/data/IEEE_Resume.pdf" download={"Resume.pdf"}>
-              <MagicButton title="Download Resume" icon={<FaDownload />} />
+              <MagicButton
+                title="Download Resume"
+                icon={<FaDownload />}
+                position=""
+              />
             </a>
           </div>
         </div>
