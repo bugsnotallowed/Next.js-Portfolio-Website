@@ -38,7 +38,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hello, I'm Adarsh Gupta. A Full Stack Web Developer.
+            Hello, I&apos;m Adarsh Gupta. A Full Stack Web Developer.
           </p>
 
           <div className="flex flex-row gap-3">
