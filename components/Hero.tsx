@@ -49,7 +49,10 @@ const Hero = () => {
                 position=""
               />
             </a>
-            <a href="@/components/data/IEEE_Resume.pdf" download={"Resume.pdf"}>
+            <a
+              href="@/components/data/AdarshResume724.pdf"
+              download={"AdarshResume724.pdf"}
+            >
               <MagicButton
                 title="Download Resume"
                 icon={<FaDownload />}
