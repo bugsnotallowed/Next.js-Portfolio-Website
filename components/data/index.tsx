@@ -1,8 +1,9 @@
 export const navItems = [
-  { name: "Home", link: "#Home" },
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "#contact" },
+  { name: "Projects", link: "#projects"},
+  { name: "Experience", link: "#experiences"},
+  { name: "Contact", link: "#contact"},
 ];
 
 export const gridItems = [
@@ -53,7 +54,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a BlockChain Based Music Streaming Dapp",
+    title: "Currently building a Secure Carbon Footprint Tracking Website using Blockchain",
     description: "The Inside Scoop",
     className: "md:col-span-2 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -94,52 +95,43 @@ export const projects = [
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "",
+    title: "Secure Carbon Footprint Tracking Using Blockchain",
+    des: "A REAL Software-as-a-Service app with Blockchain features for carbon footprint tracking of companies to ensure transperency.",
+    img: "/CarbonFuelDashSS.jpeg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://github.com/shreya64684/TE_MINI_PROJECT",
   },
   {
     id: 4,
-    title: "Wheather Application",
-    des: "Basic Wheather App using OpenWheather API Key which tells you about temperature, humidity and Wind speed accross any city in the world.",
-    img: "/Wheather.png",
+    title: "StockScreener Application",
+    des: "A Stock Screening website with stock fundamental API and latest news API integration using Java SpringBoot framework and thymeleaf",
+    img: "/StockSearchSS.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/bugsnotallowed/React-Weather-App",
+    link: "https://github.com/bugsnotallowed/javaSpring-stockoholic-application",
   },
 ];
 
 export const testimonials = [
   {
+    image:"/MuIdeasIncubationPhoto.jpg",
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thrilled to Share Our Startup Journey 🚀My team and I had the incredible opportunity to present our startup idea, 📈Secure & Transparent Carbon Footprint Tracking Using Blockchain, at the MU Ideas Incubation Center, University of Mumbai, Kalina. We pitched our vision to Dr. Sachin S. Laddha, Business Coach, who appreciated our idea and offered us a pre-incubation opportunity—a major milestone for us!✨😁With this, we are excited to officially begin our journey under the pre-incubation agreement at MU Ideas Foundation 💡. This experience has been an eye-opener, giving us firsthand exposure to the startup ecosystem, business validation, and the structured process of establishing a venture.",
+    name: "Adarsh Gupta",
+    title: "Mumbai University Ideas Incubation Center",
   },
   {
+    image:"/Prakalp25Ieeephoto.jpg",
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Thrilled to share that I successfully organized a National-Level Project Competition — Prakalp 3.0 (2K25) at my college, managing over 600+ teams from across India.As the Vice Chairperson of the IEEE and WIE Technical Council, this two-month journey was an eye-opening experience that taught me invaluable lessons in, Large-scale event planning and execution, Collaborating with 30+ council members, Sponsorship outreach and negotiation, Handling formal documentation and compliance, Navigating internal dynamics and balancing academics, One of our major achievements was securing a sponsorship amount of ₹1 Lakh, which enabled us to execute the event flow seamlessly.This experience pushed me well beyond my comfort zone and helped me understand the real importance of time management, task delegation, and team coordination.Grateful for this opportunity and excited to take these learnings forward in my future endeavors!",
+    name: "Adarsh Gupta",
+    title: "Praklap 3.0 2k25 - Expericence",
   },
   {
+    image:"/AvishkarIdeaPhoto.jpg",
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Proud to share that our team — Shreya Ghorpade (Team Lead), Adarsh Gupta (myself), Andronicus Lal, and Steffi Peter — participated in the Avishkar Idea Competition held at LR Tiwari College, where we presented our concept of a Secure Carbon Footprint Tracking Website using Blockchain. Our project focused on creating a transparent system for tracking carbon emissions specifically in the Indian cement industry, leveraging blockchain as a secure and tamper-proof ledger for storing emission data. The broader vision was to collaborate with the Government of India to make carbon tracking mandatory, ensuring companies display accurate and verifiable environmental data — a step toward reducing greenwashing and systemic corruption. We were proud to advance to the zonal presentation round, and the experience further deepened our commitment to driving innovation in sustainability and tech.",
+    name: "Adarsh Gupta",
+    title: "Avishkar Idea Competition- L.R. Tiwari College",
   },
 ];
 
