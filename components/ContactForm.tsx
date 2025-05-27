@@ -86,7 +86,7 @@ const ContactForm = () => {
           Send Message
         </button>
         <MagicButton
-          title="Let's get in touch"
+          title="Lets get in touch"
           icon={<FaLocationArrow />}
           position="right"
         />

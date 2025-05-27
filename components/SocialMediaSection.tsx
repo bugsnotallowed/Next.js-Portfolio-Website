@@ -123,7 +123,7 @@ const SocialMediaSection = () => {
         {/* Additional CTA */}
         <div className="text-center mt-16">
           <p className="text-gray-400 text-lg">
-            Let's build something amazing together! 🚀
+            Lets build something amazing together! 🚀
           </p>
         </div>
       </div>
