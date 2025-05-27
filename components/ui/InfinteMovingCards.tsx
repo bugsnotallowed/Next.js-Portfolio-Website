@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -26,7 +27,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, [addAnimation]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -127,7 +128,9 @@ export const InfiniteMovingCards = ({
         <div className="flex-shrink-0 w-full md:w-48 lg:w-56 flex items-center justify-center">
           <div className="relative w-full h-32 md:h-40 lg:h-48 rounded-xl overflow-hidden border border-slate-700/50">
             {item.image ? (
-              <img
+              <Image
+              width={1200}   // supply an intrinsic width/height
+        height={800}
                 src={item.image}
                 alt={`${item.name} - ${item.title}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

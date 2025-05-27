@@ -3,13 +3,14 @@ import { useState } from "react";
 import { socialMedia } from "@/components/data";
 import MagicButton from "@/components/ui/MagicButton";
 import { FocusCards } from "./ui/FocusCards";
+import Image from "next/image"
 
 const Footer = () => {
   return (
     <footer className="w-full pt-10 pb-2" id="contact">
       {/* background grid */}
       {/* <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50"
@@ -28,7 +29,7 @@ const Footer = () => {
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <a href={info.src}>
-                <img src={info.img} alt="icons" width={20} height={20} />
+                <Image src={info.img} alt="icons" width={20} height={20} />
               </a>
             </div>
           ))}
