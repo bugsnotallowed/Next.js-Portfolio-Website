@@ -206,6 +206,7 @@ export const BentoGridItem = ({
             alt="decorative"
             width={1200} // supply an intrinsic width/height
             height={800}
+            loading = "lazy"
             className={cn(
               spareImgClassName,
               "object-cover object-center w-full h-full"

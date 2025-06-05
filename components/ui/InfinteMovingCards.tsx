@@ -132,9 +132,10 @@ export const InfiniteMovingCards = ({
             {item.image ? (
               <Image
               width={1200}   // supply an intrinsic width/height
-        height={800}
+              height={800}
                 src={item.image}
                 alt={`${item.name} - ${item.title}`}
+                loading = "lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             ) : (

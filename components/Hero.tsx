@@ -76,7 +76,7 @@ import { FaDownload } from "react-icons/fa";
 const Hero = () => {
   return (
     <section id="home">
-      <div className="pb-10 pt-12">
+      <div className="pb-10 pt-7">
         <div>
           <Spotlight
             className="-top-40 -left-10 md:-top-20 md:-left-32 h-screen"
@@ -119,8 +119,8 @@ const Hero = () => {
                   />
                 </a>
                 <a
-                  href="/Adarsh_Resume20_9.pdf"
-                  download={"Adarsh_Resume20_9.pdf"}
+                  href="/Adarsh_Resume_2_6.pdf"
+                  download={"Adarsh_Resume_2_6.pdf"}
                 >
                   <MagicButton
                     title="Download Resume"

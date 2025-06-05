@@ -6,7 +6,7 @@ const Experiences = () => {
   return (
     <section id="experiences">
     <div>
-      <div className="py-20">
+      <div className="py-10">
         <h1 className="heading">
           A small selection of {""}
           <span className="text-purple">Experiences</span>

@@ -9,6 +9,8 @@ import Footer from "@/components/Footer";
 import RecentProjects from "@/components/RecentProjects";
 import SocialMediaSection from "@/components/SocialMediaSection";
 import Experiences from "@/components/Experiences";
+import TechnicalExpertise from "@/components/TechnicalExpertise";
+import Education from "@/components/Education";
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <TechnicalExpertise />
         <RecentProjects />
+        <Education />
         <Experiences />
         <SocialMediaSection />
         <Footer />

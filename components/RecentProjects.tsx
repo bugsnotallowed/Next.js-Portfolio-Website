@@ -7,12 +7,12 @@ import Image from "next/image"
 const RecentProjects = () => {
   return (
     <section id="projects">
-    <div className="py-20">
+    <div className="py-10">
       <h1 className="heading">
         A small selection of {""}
         <span className="text-purple">Recent Projects</span>
       </h1>
-      <div className="p-4 gap-16 item-center justify-center flex flex-wrap mt-10">
+      <div className="px-4 py-4 pt-2 pb-0 gap-16 item-center justify-center flex flex-wrap mt-8">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
@@ -22,13 +22,13 @@ const RecentProjects = () => {
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
                   <Image className="" src="/bg.png" width={1200}   // supply an intrinsic width/height
-        height={800}alt="bg-img"></Image>
+                  height={800}alt="bg-img" loading = "lazy"></Image>
                 </div>
                 <Image
                   src={img}
                   alt={title}
                   width={1200}   // supply an intrinsic width/height
-        height={800}
+                  height={800}
                   className="z-10 absolute bottom-0"
                 ></Image>
               </div>
@@ -58,7 +58,7 @@ const RecentProjects = () => {
                       }}
                     >
                       <Image width={1200}   // supply an intrinsic width/height
-        height={800} src={icon} alt="icon5" className="p-2" />
+                        height={800} src={icon} alt="icon5" className="p-2" loading = "lazy"/>
                     </div>
                   ))}
                 </div>

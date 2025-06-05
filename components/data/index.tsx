@@ -1,7 +1,9 @@
 export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
+  { name: "Skills", link: "#skills" },
   { name: "Projects", link: "#projects"},
+  { name: "Education", link: "#education"},
   { name: "Experience", link: "#experiences"},
   { name: "Contact", link: "#contact"},
 ];
@@ -82,7 +84,7 @@ export const projects = [
     title: "My Personal Blog Website",
     des: "This is my personal blog website where I post my thoughts and present my ideas to the world",
     img: "/AdarshWrites.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"],
     link: "https://github.com/bugsnotallowed/Personal-blog-website",
   },
   {
@@ -90,15 +92,15 @@ export const projects = [
     title: "Realtime Device Tracking App",
     des: "Track your devices with this app. Tried learning new Js library - Leaflet Js",
     img: "/tracker.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "",
+    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
+    link: "https://github.com/bugsnotallowed/Real-Time-Device-Tracking-Application",
   },
   {
     id: 3,
     title: "Secure Carbon Footprint Tracking Using Blockchain",
     des: "A REAL Software-as-a-Service app with Blockchain features for carbon footprint tracking of companies to ensure transperency.",
     img: "/CarbonFuelDashSS.jpeg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"],
     link: "https://github.com/shreya64684/TE_MINI_PROJECT",
   },
   {
@@ -106,7 +108,7 @@ export const projects = [
     title: "StockScreener Application",
     des: "A Stock Screening website with stock fundamental API and latest news API integration using Java SpringBoot framework and thymeleaf",
     img: "/StockSearchSS.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"],
     link: "https://github.com/bugsnotallowed/javaSpring-stockoholic-application",
   },
 ];
