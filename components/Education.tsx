@@ -26,7 +26,7 @@ const educationData: EducationItem[] = [
     degree: 'B.Tech in Computer Science and Engineering',
     institution: 'Fr. Conceicao Rodrigues College of Engineering',
     location: 'Mumbai, Maharashtra',
-    cgpa: '7.9/10.0',
+    cgpa: '7.8/10.0',
     courses: [
       { name: 'Data Structures & Algorithms', icon: '</>' },
       { name: 'Database Management Systems', icon: '🗄️' },
@@ -39,12 +39,20 @@ const educationData: EducationItem[] = [
   {
     id: 'junior college',
     period: '2020 - 2022',
-    degree: 'HSC SSC',
-    institution: 'Nirmala Memorial Foundation, P.J Pancholia High School',
+    degree: 'HSC (Science)',
+    institution: 'Nirmala Memorial Foundation',
     location: 'Mumbai',
     grade12: '80%',
-    grade10: '91.2%',
     specialization: 'Specialized in Physics, Chemistry, and Maths'
+  },
+  {
+    id: 'School',
+    period: '2019 - 2020',
+    degree: 'SSC',
+    institution: 'P.J Pancholia High School',
+    location: 'Mumbai',
+    grade10: '91.2%',
+    specialization: '1st Topper in Science with 98/100'
   }
 ];
 

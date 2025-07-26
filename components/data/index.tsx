@@ -83,9 +83,9 @@ export const projects = [
     id: 1,
     title: "My Personal Blog Website",
     des: "This is my personal blog website where I post my thoughts and present my ideas to the world",
-    img: "/AdarshWrites.png",
+    img: "/BlogHero.png",
     iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"],
-    link: "https://github.com/bugsnotallowed/Personal-blog-website",
+    link: "https://adarshwritesblog.netlify.app/",
   },
   {
     id: 2,
@@ -108,8 +108,16 @@ export const projects = [
     title: "StockScreener Application",
     des: "A Stock Screening website with stock fundamental API and latest news API integration using Java SpringBoot framework and thymeleaf",
     img: "/StockSearchSS.png",
-    iconLists: ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"],
+    iconLists: ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/thymeleaf/thymeleaf-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"],
     link: "https://github.com/bugsnotallowed/javaSpring-stockoholic-application",
+  },
+  {
+    id: 5,
+    title: "VideoChat Application",
+    des: "A Full Stack Video Chat Application using WebRTC and Socket.io for real-time communication.Backend in NodeJs and ExpressJs",
+    img: "/LobbySS.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg"],
+    link: "https://videochatappwebrtc.vercel.app/",
   },
 ];
 
@@ -136,6 +144,24 @@ export const testimonials = [
     title: "Avishkar Idea Competition- L.R. Tiwari College",
   },
 ];
+
+export const certificates = [
+  {
+    name: "AWS Certified Architecting",
+  issuer: "AWS Academy",
+  badgeIcon: "/aws-cloud-architecting.png"
+  },
+  {
+    name: "AWS Certified Microservice CI/CD",
+  issuer: "AWS Academy",
+  badgeIcon: "/aws-academy-microservicesCICD.png"
+  },
+  {
+    name: "AWS Certified Cloud-Security",
+  issuer: "AWS Academy",
+  badgeIcon: "/aws-academy-cloud-security-builder.png"
+  }
+]
 
 export const companies = [
   {
