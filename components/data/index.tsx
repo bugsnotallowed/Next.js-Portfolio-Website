@@ -160,6 +160,11 @@ export const certificates = [
     name: "AWS Certified Cloud-Security",
   issuer: "AWS Academy",
   badgeIcon: "/aws-academy-cloud-security-builder.png"
+  },
+  {
+    name: "LeetCode 50 Day Streak",
+  issuer: "LeetCode",
+  badgeIcon: "/50DayLeetCode_Badge.png"
   }
 ]
 
