@@ -17,6 +17,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Adarsh's Portfolio</title>
+      </head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWWV6KZ3ER"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CWWV6KZ3ER');
+      </script>
       <body className={inter.className}></body>
       <ThemeProvider
         attribute="class"
