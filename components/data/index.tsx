@@ -224,6 +224,11 @@ export const certificates = [
     issuer: "AWS Academy",
     badgeIcon: "/aws_nlp_ml_badge.png",
   },
+  {
+    name: "LeetCode 50 Day Streak",
+  issuer: "LeetCode",
+  badgeIcon: "/50DayLeetCode_Badge.png"
+  },
 ];
 
 export const companies = [
