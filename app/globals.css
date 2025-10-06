@@ -86,6 +86,14 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .blue-gradient {
+    background: linear-gradient(180deg, #161a31 0%, --background, 50%);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
 }
 
 @keyframes fade-in {

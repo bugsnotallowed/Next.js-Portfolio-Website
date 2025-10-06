@@ -2,10 +2,20 @@ export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Skills", link: "#skills" },
-  { name: "Projects", link: "#projects"},
-  { name: "Education", link: "#education"},
-  { name: "Experience", link: "#experiences"},
-  { name: "Contact", link: "#contact"},
+  { name: "Projects", link: "#projects" },
+  { name: "Education", link: "#education" },
+  { name: "Experience", link: "#experiences" },
+  { name: "Contact", link: "#contact" },
+];
+
+export const images = [
+  "/casualprofilephoto2.png",
+  "/photo1.webp",
+  "/photo2.jpg",
+  "/photo3.jpg",
+  "/photo4.jpg",
+  "/dance.jpg",
+  "/photo5.jpg",
 ];
 
 export const gridItems = [
@@ -22,7 +32,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I am very flexible with time zone communications",
+    title: "I am actively looking for internships and freelance work.",
     description: "",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -56,7 +66,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a Secure Carbon Footprint Tracking Website using Blockchain",
+    title:
+      "Currently building a RespiScope - A smart stethoscope & a consultation platform.",
     description: "The Inside Scoop",
     className: "md:col-span-2 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -68,7 +79,7 @@ export const gridItems = [
   {
     id: 6,
     title: "Do you want to start a project together?",
-    description: "",
+    description: "Let's Connect!",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -84,60 +95,107 @@ export const projects = [
     title: "My Personal Blog Website",
     des: "This is my personal blog website where I post my thoughts and present my ideas to the world",
     img: "/BlogHero.png",
-    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    ],
     link: "https://adarshwritesblog.netlify.app/",
   },
   {
     id: 2,
-    title: "Realtime Device Tracking App",
-    des: "Track your devices with this app. Tried learning new Js library - Leaflet Js",
-    img: "/tracker.png",
-    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"],
-    link: "https://github.com/bugsnotallowed/Real-Time-Device-Tracking-Application",
+    title: "RespiScope - A Smart Stethoscope & Consultation Platform",
+    des: "A Full Stack Web Application for remote health monitoring and consultation, integrated with a smart stethoscope device.",
+    img: "/landing.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    ],
+    link: "https://github.com/sAnyo08/respiScope-",
   },
   {
     id: 3,
     title: "Secure Carbon Footprint Tracking Using Blockchain",
     des: "A REAL Software-as-a-Service app with Blockchain features for carbon footprint tracking of companies to ensure transperency.",
     img: "/CarbonFuelDashSS.jpeg",
-    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    ],
     link: "https://github.com/shreya64684/TE_MINI_PROJECT",
   },
   {
     id: 4,
-    title: "StockScreener Application",
-    des: "A Stock Screening website with stock fundamental API and latest news API integration using Java SpringBoot framework and thymeleaf",
-    img: "/StockSearchSS.png",
-    iconLists: ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/thymeleaf/thymeleaf-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"],
-    link: "https://github.com/bugsnotallowed/javaSpring-stockoholic-application",
+    title: "Blockchain Group Chat Application",
+    des: "A decentralized chat application built on Ethereum using Hardhat, Web3.js, Express.js, and React.js. Users can connect their MetaMask wallets and exchange messages stored on a smart contract. Real-time updates are powered by WebSockets.",
+    img: "/GoupChatWeb3.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hardhat/hardhat-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+    ],
+    link: "https://github.com/bugsnotallowed/Blockchain-Based-GroupChat-Hardhat",
   },
   {
     id: 5,
     title: "VideoChat Application",
     des: "A Full Stack Video Chat Application using WebRTC and Socket.io for real-time communication.Backend in NodeJs and ExpressJs",
     img: "/LobbySS.jpg",
-    iconLists: ["/re.svg", "/tail.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+    ],
     link: "https://videochatappwebrtc.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "URL Shortener - Production level MVC Application",
+    des: "It uses Hashing and bit manupulation technique to generate the unique id (Nano Id) of Length 7 - which can generate trillions of unique alpa numeric ids. So it stores the urls into MongoDB Storage",
+    img: "/UrlShortener.png",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    ],
+    link: "https://github.com/bugsnotallowed/URL-Shortener-MVC-Redux-MERN",
   },
 ];
 
 export const testimonials = [
   {
-    image:"/MuIdeasIncubationPhoto.jpg",
+    image: "/MuIdeasIncubationPhoto.jpg",
     quote:
       "Thrilled to Share Our Startup Journey 🚀My team and I had the incredible opportunity to present our startup idea, 📈Secure & Transparent Carbon Footprint Tracking Using Blockchain, at the MU Ideas Incubation Center, University of Mumbai, Kalina. We pitched our vision to Dr. Sachin S. Laddha, Business Coach, who appreciated our idea and offered us a pre-incubation opportunity—a major milestone for us!✨😁With this, we are excited to officially begin our journey under the pre-incubation agreement at MU Ideas Foundation 💡. This experience has been an eye-opener, giving us firsthand exposure to the startup ecosystem, business validation, and the structured process of establishing a venture.",
     name: "Adarsh Gupta",
     title: "Mumbai University Ideas Incubation Center",
   },
   {
-    image:"/Prakalp25Ieeephoto.jpg",
+    image: "/Prakalp25Ieeephoto.jpg",
     quote:
       "Thrilled to share that I successfully organized a National-Level Project Competition — Prakalp 3.0 (2K25) at my college, managing over 600+ teams from across India.As the Vice Chairperson of the IEEE and WIE Technical Council, this two-month journey was an eye-opening experience that taught me invaluable lessons in, Large-scale event planning and execution, Collaborating with 30+ council members, Sponsorship outreach and negotiation, Handling formal documentation and compliance, Navigating internal dynamics and balancing academics, One of our major achievements was securing a sponsorship amount of ₹1 Lakh, which enabled us to execute the event flow seamlessly.This experience pushed me well beyond my comfort zone and helped me understand the real importance of time management, task delegation, and team coordination.Grateful for this opportunity and excited to take these learnings forward in my future endeavors!",
     name: "Adarsh Gupta",
     title: "Praklap 3.0 2k25 - Expericence",
   },
   {
-    image:"/AvishkarIdeaPhoto.jpg",
+    image: "/AvishkarIdeaPhoto.jpg",
     quote:
       "Proud to share that our team — Shreya Ghorpade (Team Lead), Adarsh Gupta (myself), Andronicus Lal, and Steffi Peter — participated in the Avishkar Idea Competition held at LR Tiwari College, where we presented our concept of a Secure Carbon Footprint Tracking Website using Blockchain. Our project focused on creating a transparent system for tracking carbon emissions specifically in the Indian cement industry, leveraging blockchain as a secure and tamper-proof ledger for storing emission data. The broader vision was to collaborate with the Government of India to make carbon tracking mandatory, ensuring companies display accurate and verifiable environmental data — a step toward reducing greenwashing and systemic corruption. We were proud to advance to the zonal presentation round, and the experience further deepened our commitment to driving innovation in sustainability and tech.",
     name: "Adarsh Gupta",
@@ -148,20 +206,25 @@ export const testimonials = [
 export const certificates = [
   {
     name: "AWS Certified Architecting",
-  issuer: "AWS Academy",
-  badgeIcon: "/aws-cloud-architecting.png"
+    issuer: "AWS Academy",
+    badgeIcon: "/aws-cloud-architecting.png",
   },
   {
     name: "AWS Certified Microservice CI/CD",
-  issuer: "AWS Academy",
-  badgeIcon: "/aws-academy-microservicesCICD.png"
+    issuer: "AWS Academy",
+    badgeIcon: "/aws-academy-microservicesCICD.png",
   },
   {
     name: "AWS Certified Cloud-Security",
-  issuer: "AWS Academy",
-  badgeIcon: "/aws-academy-cloud-security-builder.png"
-  }
-]
+    issuer: "AWS Academy",
+    badgeIcon: "/aws-academy-cloud-security-builder.png",
+  },
+  {
+    name: "AWS Machine Learing for NLP",
+    issuer: "AWS Academy",
+    badgeIcon: "/aws_nlp_ml_badge.png",
+  },
+];
 
 export const companies = [
   {
@@ -242,5 +305,10 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     src: "https://www.linkedin.com/in/adarsh-gupta-650a09264/",
+  },
+  {
+    id: 4,
+    img: "/link.svg",
+    src: "https://codolio.com/profile/Adarsh_9901/",
   },
 ];
