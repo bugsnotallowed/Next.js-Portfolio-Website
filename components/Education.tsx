@@ -15,6 +15,7 @@ interface EducationItem {
   cgpa?: string;
   grade10?: string;
   grade12?: string;
+  mhtcet?: string;
   specialization?: string;
   courses?: Course[];
 }
@@ -28,12 +29,14 @@ const educationData: EducationItem[] = [
     location: 'Mumbai, Maharashtra',
     cgpa: '7.8/10.0',
     courses: [
+      { name: 'Honors in Data Science', icon: '📊' },
       { name: 'Data Structures & Algorithms', icon: '</>' },
       { name: 'Database Management Systems', icon: '🗄️' },
       { name: 'Operating Systems', icon: '💻' },
       { name: 'Computer Networks', icon: '🌐' },
       { name: 'Software Engineering', icon: '⚙️' },
-      { name: 'Artificial Intelligence', icon: '🤖' }
+      { name: 'Artificial Intelligence', icon: '🤖' },
+      { name: 'DeveOps', icon: '🔗' }
     ]
   },
   {
@@ -43,6 +46,7 @@ const educationData: EducationItem[] = [
     institution: 'Nirmala Memorial Foundation',
     location: 'Mumbai',
     grade12: '80%',
+    mhtcet: '94.87 %ile',
     specialization: 'Specialized in Physics, Chemistry, and Maths'
   },
   {
@@ -64,7 +68,7 @@ export default function Education() {
   };
 
   return (
-    <section id="education" className="py-10 px-6">
+    <section id="education" className="py-12 px-6">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-16">
@@ -125,6 +129,9 @@ export default function Education() {
                       <div className="flex items-center gap-2">
                         <span className="text-purple-400 font-semibold text-lg">
                           12th: {item.grade12}
+                        </span>
+                        <span className="text-purple-400 font-semibold text-lg">
+                          MHTCET: {item.mhtcet}
                         </span>
                       </div>
                     )}

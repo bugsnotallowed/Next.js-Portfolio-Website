@@ -7,7 +7,7 @@ import Image from "next/image"
 const RecentProjects = () => {
   return (
     <section id="projects">
-    <div className="py-10">
+    <div className="py-12">
       <h1 className="heading">
         A small selection of {""}
         <span className="text-purple">Recent Projects</span>
@@ -16,7 +16,7 @@ const RecentProjects = () => {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] sm:h-96"
           >
             <PinContainer title={title} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">

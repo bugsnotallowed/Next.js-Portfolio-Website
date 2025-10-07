@@ -19,7 +19,7 @@ const Footer = () => {
 
       <div className="flex mt-10 md:flex-row flex-col z-10 justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adarsh Gupta
+          Copyright © 2024 Adarsh Gupta | +91 8369291692 | adarsh.signin173@gmail.com
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

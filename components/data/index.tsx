@@ -26,7 +26,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-4 md:row-span-2 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/devImage.jpg",
     spareImg: "",
     spareImgClassName: "",
   },
@@ -48,14 +48,14 @@ export const gridItems = [
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "",
+    img: "/codebg.jpg",
     spareImg: "",
     spareImgClassName: "",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "My Research Paper and Publications",
+    description: "Blockchain Based Carbon Footprint Verification and Management",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -83,7 +83,7 @@ export const gridItems = [
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
+    img: "/connectbg.jpg",
     spareImg: "",
     spareImgClassName: "",
   },
@@ -225,9 +225,14 @@ export const certificates = [
     badgeIcon: "/aws_nlp_ml_badge.png",
   },
   {
+    name: "Hashgraph Hedera - BlockChain Developer",
+    issuer: "The Hashgraph Association",
+    badgeIcon: "/hedera_blockchain_cert.jpg",
+  },
+  {
     name: "LeetCode 50 Day Streak",
-  issuer: "LeetCode",
-  badgeIcon: "/50DayLeetCode_Badge.png"
+    issuer: "LeetCode",
+    badgeIcon: "/50DayLeetCode_Badge.png"
   },
 ];
 
@@ -310,10 +315,5 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     src: "https://www.linkedin.com/in/adarsh-gupta-650a09264/",
-  },
-  {
-    id: 4,
-    img: "/link.svg",
-    src: "https://codolio.com/profile/Adarsh_9901/",
-  },
+  }
 ];

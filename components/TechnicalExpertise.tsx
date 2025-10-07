@@ -132,7 +132,7 @@ const TechnicalExpertise: React.FC = () => {
         </div>
         
         {/* Certifications Section */}
-        <div className="text-center">
+        <div className="text-center py-6">
           <h2 className="text-4xl font-bold mb-12">Certifications</h2>
           
           <div className="flex justify-center flex-wrap gap-8">
