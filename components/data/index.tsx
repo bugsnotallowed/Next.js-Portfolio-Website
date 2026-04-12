@@ -1,3 +1,5 @@
+import { JetBrains_Mono } from "next/font/google";
+
 export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
@@ -9,7 +11,7 @@ export const navItems = [
 ];
 
 export const images = [
-  "/casualprofilephoto2.png",
+  "/ProfilePic_Yellow_bg_sticker.jpeg",
   "/photo1.webp",
   "/photo2.jpg",
   "/photo3.jpg",
@@ -67,12 +69,12 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently building a RespiScope - A smart stethoscope & a consultation platform.",
+      "Currently building a RespiScope - A smart IoT stethoscope & a Telemedicine consultation platform.",
     description: "The Inside Scoop",
     className: "md:col-span-2 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "/respiscope_landing.png",
     spareImg: "/grid.svg",
     spareImgClassName: "",
   },
@@ -92,23 +94,24 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "My Personal Blog Website",
-    des: "This is my personal blog website where I post my thoughts and present my ideas to the world",
+    title: "Agentic Enterprise Knowledge Hub",
+    des: "An AI-powered enterprise knowledge management system that helps organizations centralize, search, and utilize their internal documentation and data. Built with a focus on enterprise-grade features, scalability, and seamless integration with existing workflows.",
     img: "/BlogHero.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
     ],
-    link: "https://adarshwritesblog.netlify.app/",
+    link: "https://github.com/bugsnotallowed/Agentic-Rag-Enterprise-Knowledge-Hub",
   },
   {
     id: 2,
     title: "RespiScope - A Smart Stethoscope & Consultation Platform",
     des: "A Full Stack Web Application for remote health monitoring and consultation, integrated with a smart stethoscope device.",
-    img: "/landing.png",
+    img: "/respiscope_landing.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -117,7 +120,7 @@ export const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     ],
-    link: "https://github.com/sAnyo08/respiScope-",
+    link: "https://respiscope.vercel.app",
   },
   {
     id: 3,
@@ -175,7 +178,7 @@ export const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
     ],
-    link: "https://github.com/bugsnotallowed/URL-Shortener-MVC-Redux-MERN",
+    link: "https://shortify-adarsh.netlify.app",
   },
 ];
 
