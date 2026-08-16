@@ -24,8 +24,8 @@ const experienceData: ExperienceItem[] = [
     period: 'Jan 2026 - Present',
     role: 'Software Development Engineer Intern',
     company: 'Information Data System Pvt Ltd',
-    location: 'Mumbai, Maharashtra',
-    learning: "Stabilized and refactored a legacy Angular 9 supply chain application, resolving dependency conflicts, fixing authentication and routing issues, and achieving a production-ready build. Tested and debugged a React MERN + Node.js supply chain system, identifying business logic issues, validating API endpoints, and documenting system workflows and fixes. Added email verification feature"
+    location: 'Mumbai, Maharashtra - Paid',
+    learning: "– Engineered and deployed production-ready features across enterprise platforms including Supply Chain Managemennt, DPDP-compliant Consent Management Platform, and Student EID Stack, delivering scalable frontend and backend functionality using modern full-stack technologies.– Diagnosed, debugged, and resolved 10+ production issues by analyzing application behavior, validating business logic, reproducing defects, and implementing robust fixes to improve system reliability, performance, and user experience. – Designed and implemented data-intensive features involving complex workflows, database operations, REST API integrations, and efficient data processing to support production-scale enterprise applications with high accuracy and maintainability.",
   }
 ];
 

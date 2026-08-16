@@ -25,21 +25,24 @@ const TechnicalExpertise: React.FC = () => {
     { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg', category: 'languages', progress: 70, color: '#f59e0b' },
     { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg', category: 'languages', progress: 65, color: '#10b981' },
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', category: 'languages', progress: 70, color: '#fbbf24' },
+    { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg', category: 'languages', progress: 70, color: '#3b82f6' },
     { name: 'C++', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg', category: 'languages', progress: 65, color: '#3b82f6' },
-    { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg', category: 'languages', progress: 70, color: '#06b6d4' },
     
     // Web Development
     { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg', category: 'webdev', progress: 70, color: '#06b6d4' },
     { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg', category: 'webdev', progress: 70, color: '#10b981' },
     { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg', category: 'webdev', progress: 70, color: '#6b7280' },
     { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg', category: 'webdev', progress: 80, color: '#06b6d4' },
-    { name: 'Spring Boot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg', category: 'webdev', progress: 40, color: '#10b981' },
+    { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg', category: 'webdev', progress: 70, color: '#000000' },
+    { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg', category: 'webdev', progress: 60, color: '#06b6d4' },
     
     // Databases
     { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg', category: 'databases', progress: 70, color: '#10b981' },
     { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg', category: 'databases', progress: 80, color: '#3b82f6' },
     { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg', category: 'databases', progress: 50, color: '#fbbf24' },
     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg', category: 'databases', progress: 60, color: '#3b82f6' },
+    { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg', category: 'databases', progress: 50, color: '#ef4444' },
+    { name: 'ChromaDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chromadb/chromadb-original.svg', category: 'databases', progress: 50, color: '#3b82f6' },
     
     // Tools
     { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg', category: 'tools', progress: 70, color: '#f97316' },
@@ -47,7 +50,8 @@ const TechnicalExpertise: React.FC = () => {
     { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg', category: 'tools', progress: 50, color: '#fbbf24' },
     { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg', category: 'tools', progress: 90, color: '#3b82f6' },
     { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', category: 'tools', progress: 60, color: '#f59e0b' },
-    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg', category: 'tools', progress: 70, color: '#f97316' }
+    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg', category: 'tools', progress: 70, color: '#f97316' },
+    { name: 'Github', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: 'tools', progress: 80, color: '#000000' }
   ];
 
   // const certifications: Certification[] = [
@@ -135,10 +139,10 @@ const TechnicalExpertise: React.FC = () => {
         <div className="text-center py-6">
           <h2 className="text-4xl font-bold mb-12">Certifications</h2>
           
-          <div className="flex justify-center flex-wrap gap-8">
+          <div className="flex justify-center flex-wrap gap-4">
             {certificates.map((cert, index) => (
               <div key={index} className="bg-gray-800 p-8 rounded-lg shadow-2xl">
-                <Image width={192} height={192} alt='Badge Image' src={cert.badgeIcon}>
+                <Image width={182} height={182} alt='Badge Image' src={cert.badgeIcon}>
                 </Image>
                 <p className="text-gray-300 text-sm">{cert.name}</p>
               </div>

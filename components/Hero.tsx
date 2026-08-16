@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
 import { ParallaxScroll } from "./ui/ParallaxScrollDemo";
 import { images } from "./data/index";
+import { InfiniteScrollerPhotos } from "./ui/InfinteScrollerPhotos";
 
 const Hero = () => {
   return (
@@ -57,8 +58,8 @@ const Hero = () => {
                   />
                 </a>
                 <a
-                  href="/Adarsh_Resume_18_03.pdf"
-                  download={"Adarsh_Resume_18_03.pdf"}
+                  href="/Adarsh_Resume_23_07.pdf"
+                  download={"Adarsh_Resume_23_07.pdf"}
                 >
                   <MagicButton
                     title="Download Resume"
@@ -75,7 +76,9 @@ const Hero = () => {
               <div className="relative">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 blur-xl opacity-30 scale-110"></div>
 
-                <ParallaxScroll images={images} />
+                <ParallaxScroll images={images}/>
+                {/* <InfiniteScrollerPhotos images={images} direction="down"
+              speed="normal" pauseOnHover = {true} /> */}
               </div>
             </div>
           </div>

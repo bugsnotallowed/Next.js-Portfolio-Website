@@ -15,9 +15,9 @@ export const images = [
   "/photo1.webp",
   "/photo2.jpg",
   "/photo3.jpg",
-  "/photo4.jpg",
   "/dance.jpg",
   "/photo5.jpg",
+  "/adarsh_edit_photo.jpg",
 ];
 
 export const gridItems = [
@@ -96,7 +96,7 @@ export const projects = [
     id: 1,
     title: "Agentic Enterprise Knowledge Hub",
     des: "An AI-powered enterprise knowledge management system that helps organizations centralize, search, and utilize their internal documentation and data. Built with a focus on enterprise-grade features, scalability, and seamless integration with existing workflows.",
-    img: "/BlogHero.png",
+    img: "/RAG_Chat.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -228,9 +228,14 @@ export const certificates = [
     badgeIcon: "/aws_nlp_ml_badge.png",
   },
   {
-    name: "Hashgraph Hedera - BlockChain Developer",
+    name: "Hashgraph BlockChain Developer",
     issuer: "The Hashgraph Association",
     badgeIcon: "/hedera_blockchain_cert.jpg",
+  },
+  {
+    name: "Claude Code in Action",
+    issuer: "Anthropic AI",
+    badgeIcon: "/ClaudeCode_Certficate.png",
   },
   {
     name: "LeetCode 50 Day Streak",

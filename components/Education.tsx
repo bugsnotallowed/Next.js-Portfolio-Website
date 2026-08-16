@@ -27,7 +27,7 @@ const educationData: EducationItem[] = [
     degree: 'B.Tech in Computer Science and Engineering',
     institution: 'Fr. Conceicao Rodrigues College of Engineering',
     location: 'Mumbai, Maharashtra',
-    cgpa: '7.8/10.0',
+    cgpa: '8.0/10.0',
     courses: [
       { name: 'Honors in Data Science', icon: '📊' },
       { name: 'Data Structures & Algorithms', icon: '</>' },
