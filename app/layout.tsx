@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import Script from "next/script";
+import PortfolioChatbot from "@/components/chatbot/Portfoliochatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
         disableTransitionOnChange
       >
         {children}
+        <PortfolioChatbot />
       </ThemeProvider>
     </html>
   );

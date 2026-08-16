@@ -1,0 +1,566 @@
+.portfolio-bot-trigger {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.portfolio-bot-glow {
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.25);
+  filter: blur(10px);
+}
+
+.portfolio-bot-icon {
+  position: relative;
+  z-index: 2;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 10px 35px rgba(99, 102, 241, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.portfolio-bot-ping {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 2px solid #09090b;
+  z-index: 3;
+}
+
+
+/* =========================================
+   CHAT WINDOW
+========================================= */
+
+.portfolio-chat-window {
+  position: fixed;
+  z-index: 9998;
+  right: 28px;
+  bottom: 104px;
+
+  width: 390px;
+  max-width: calc(100vw - 32px);
+  height: min(650px, calc(100vh - 135px));
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(99, 102, 241, 0.13),
+      transparent 35%
+    ),
+    rgba(10, 10, 15, 0.96);
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45),
+    0 0 0 1px
+      rgba(139, 92, 246, 0.04);
+
+  backdrop-filter: blur(25px);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.portfolio-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 17px;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.portfolio-chat-identity {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.portfolio-chat-avatar {
+  position: relative;
+
+  width: 39px;
+  height: 39px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+}
+
+.portfolio-chat-avatar span {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  border: 2px solid #0a0a0f;
+}
+
+.portfolio-chat-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.portfolio-chat-title svg {
+  color: #a78bfa;
+}
+
+.portfolio-chat-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 2px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 11px;
+}
+
+.portfolio-chat-status span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.portfolio-chat-close {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.portfolio-chat-close:hover {
+  color: white;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.07
+  );
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.portfolio-chat-messages {
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 18px 15px;
+
+  scrollbar-width: thin;
+  scrollbar-color:
+    rgba(255, 255, 255, 0.12)
+    transparent;
+}
+
+.portfolio-message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+
+  margin-bottom: 14px;
+}
+
+.user-row {
+  justify-content: flex-end;
+}
+
+.assistant-row {
+  justify-content: flex-start;
+}
+
+.portfolio-message-avatar,
+.portfolio-user-avatar {
+  flex-shrink: 0;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-message-avatar {
+  color: #c4b5fd;
+  background: rgba(
+    139,
+    92,
+    246,
+    0.15
+  );
+}
+
+.portfolio-user-avatar {
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+}
+
+.portfolio-message {
+  max-width: 78%;
+
+  padding: 10px 13px;
+
+  border-radius: 15px;
+
+  font-size: 13px;
+  line-height: 1.55;
+
+  white-space: pre-wrap;
+}
+
+.assistant-message {
+  color: rgba(255, 255, 255, 0.84);
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.055
+  );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.06);
+
+  border-bottom-left-radius: 5px;
+}
+
+.user-message {
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #6366f1
+  );
+
+  border-bottom-right-radius: 5px;
+
+  box-shadow:
+    0 5px 20px
+      rgba(99, 102, 241, 0.2);
+}
+
+.typing-cursor {
+  margin-left: 2px;
+  color: #a78bfa;
+}
+
+
+/* =========================================
+   SUGGESTIONS
+========================================= */
+
+.portfolio-suggestions {
+  padding: 0 15px 12px;
+}
+
+.suggestion-label {
+  margin-bottom: 7px;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.suggestion-list {
+  display: flex;
+  gap: 6px;
+
+  overflow-x: auto;
+
+  padding-bottom: 3px;
+
+  scrollbar-width: none;
+}
+
+.suggestion-list::-webkit-scrollbar {
+  display: none;
+}
+
+.suggestion-chip {
+  flex-shrink: 0;
+
+  padding: 7px 10px;
+
+  border-radius: 9px;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );
+
+  background: rgba(
+    139,
+    92,
+    246,
+    0.08
+  );
+
+  border: 1px solid
+    rgba(139, 92, 246, 0.15);
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border 0.2s ease,
+    color 0.2s ease;
+}
+
+.suggestion-chip:hover {
+  color: white;
+
+  background: rgba(
+    139,
+    92,
+    246,
+    0.16
+  );
+
+  border-color: rgba(
+    139,
+    92,
+    246,
+    0.35
+  );
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.portfolio-chat-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0 13px;
+
+  padding: 6px 6px 6px 13px;
+
+  border-radius: 14px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.055
+  );
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  transition: border 0.2s ease;
+}
+
+.portfolio-chat-input-wrapper:focus-within {
+  border-color: rgba(
+    139,
+    92,
+    246,
+    0.45
+  );
+}
+
+.portfolio-chat-input-wrapper input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+  outline: none;
+
+  color: white;
+
+  background: transparent;
+
+  font-size: 13px;
+}
+
+.portfolio-chat-input-wrapper input::placeholder {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  );
+}
+
+.portfolio-chat-input-wrapper button {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.portfolio-chat-input-wrapper button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.portfolio-chat-footer {
+  padding: 9px 0 11px;
+
+  text-align: center;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.22
+  );
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .portfolio-bot-trigger {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .portfolio-chat-window {
+    right: 12px;
+    bottom: 90px;
+
+    width: calc(100vw - 24px);
+
+    height: min(
+      680px,
+      calc(100vh - 110px)
+    );
+
+    border-radius: 20px;
+  }
+}
