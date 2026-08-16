@@ -6,7 +6,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
 import { ParallaxScroll } from "./ui/ParallaxScrollDemo";
 import { images } from "./data/index";
-import { InfiniteScrollerPhotos } from "./ui/InfinteScrollerPhotos";
 
 const Hero = () => {
   return (
