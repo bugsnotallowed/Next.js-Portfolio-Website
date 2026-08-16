@@ -374,7 +374,7 @@ export default function PortfolioChatbot() {
 
                 <div>
                   <div className="portfolio-chat-title">
-                    Adarsh's AI
+                    Adarsh&apos;s AI
                     <Sparkles
                       size={13}
                     />
