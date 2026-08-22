@@ -17,6 +17,7 @@ export const images = [
   "/photo3.jpg",
   "/dance.jpg",
   "/photo5.jpg",
+  "/photo7.jpg",
   "/adarsh_edit_photo.jpg",
 ];
 
@@ -181,6 +182,51 @@ export const projects = [
     link: "https://shortify-adarsh.netlify.app",
   },
 ];
+
+export const experienceData = [
+  {
+    id: 'Internship',
+    period: 'Jan 2026 - Aug 2026',
+    role: 'Software Development Engineer Intern',
+    company: 'Information Data System Pvt Ltd',
+    location: 'Mumbai, Maharashtra - Paid',
+    learning: "– Engineered and deployed production-ready features across enterprise platforms including Supply Chain Managemennt, DPDP-compliant Consent Management Platform, and Student EID Stack, delivering scalable frontend and backend functionality using modern full-stack technologies.– Diagnosed, debugged, and resolved 10+ production issues by analyzing application behavior, validating business logic, reproducing defects, and implementing robust fixes to improve system reliability, performance, and user experience. – Designed and implemented data-intensive features involving complex workflows, database operations, REST API integrations, and efficient data processing to support production-scale enterprise applications with high accuracy and maintainability.",
+    documents: [
+      {
+        type: "experience-letter",
+        title: "Internship Experience Letter",
+        url: "/ids-experience-letter.pdf",
+      }
+    ],
+    tech: [
+      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+      { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+      { name: "Mysql", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+      { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+    ]
+  },
+  {
+    id: 'Vice Chairperson - IEEE CRCE Student Branch',
+    period: 'Aug 2024 - July 2025',
+    role: 'Vice Chairperson',
+    company: 'IEEE CRCE Student Branch',
+    location: 'Mumbai, Maharashtra',
+    learning: "– Led the organization with 18+ members and execution of various Zonal and National technical events and competitions, enhancing student engagement and fostering a collaborative environment.– Managed the student branch's communication channels, ensuring effective information dissemination and community building.– Collaborated with faculty and industry professionals to raise partnerships and sponsorships to create opportunities for student growth and development.",
+    documents: [
+      {
+        type: "certificate",
+        title: "Vice Chairperson Certificate",
+        url: "/IEEE_certificate_2025.pdf",
+      }
+    ]
+  }
+];
+
 
 export const testimonials = [
   {

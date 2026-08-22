@@ -1,33 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { InfiniteMovingCards } from "./ui/InfinteMovingCards";
-import { testimonials } from "./data";
+import { testimonials, experienceData } from "./data";
+import { ExternalLink, FileText } from "lucide-react";
 import { cn } from '@/utils/cn';
 
-interface Tech {
-  name: string;
-  icon: string;
-}
-
-interface ExperienceItem {
-  id: string;
-  period: string;
-  role: string;
-  company: string;
-  location: string;
-  learning?: string;
-  tech?: Tech[];
-}
-
-const experienceData: ExperienceItem[] = [
-  {
-    id: 'Internship',
-    period: 'Jan 2026 - Present',
-    role: 'Software Development Engineer Intern',
-    company: 'Information Data System Pvt Ltd',
-    location: 'Mumbai, Maharashtra - Paid',
-    learning: "– Engineered and deployed production-ready features across enterprise platforms including Supply Chain Managemennt, DPDP-compliant Consent Management Platform, and Student EID Stack, delivering scalable frontend and backend functionality using modern full-stack technologies.– Diagnosed, debugged, and resolved 10+ production issues by analyzing application behavior, validating business logic, reproducing defects, and implementing robust fixes to improve system reliability, performance, and user experience. – Designed and implemented data-intensive features involving complex workflows, database operations, REST API integrations, and efficient data processing to support production-scale enterprise applications with high accuracy and maintainability.",
-  }
-];
 
 const Experiences = () => {
 
@@ -38,72 +14,182 @@ const Experiences = () => {
           A small selection of {""}
           <span className="text-purple">Experiences</span>
         </h1>
-        <div className="item-center flex flex-col py-20">
+        <div className="item-center flex flex-col py-20 px-5 gap-10 md:gap-20 lg:gap-32">
           {/* Timeline */}
           <div className="relative mx-10">
             {/* Vertical line */}
             <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-purple"></div>
 
+
+
             {experienceData.map((item, index) => (
-              <div key={item.id} className="relative mb-12 last:mb-0">
+              <div
+                key={item.id}
+                className="relative mb-12 last:mb-0 pb-12"
+              >
+
                 {/* Timeline dot */}
-                <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-600 rounded-full border-4 border-purple text-purple"></div>
+                <div
+                  className={cn(
+                    "absolute -left-2 top-0 w-4 h-4 rounded-full",
+                    "border-4 border-background",
+                    "transition-all duration-300",
+                    item.id === item.id
+                      ? "bg-purple-500 scale-125"
+                      : "bg-purple-600"
+                  )}
+                />
 
                 {/* Period */}
                 <div className="ml-8 mb-4">
-                  <span className="text-2xl font-semibold text-purple">
+                  <span className="text-2xl font-semibold text-purple-400">
                     {item.period}
                   </span>
                 </div>
 
-                {/* Education Card */}
-                <div className="ml-8">
+                {/* Experience Card */}
+                <div className="ml-8 flex flex-row items-start ">
                   <div
                     className={cn(
-                      "border border-slate-700/50 rounded-lg p-6 transition-all duration-300",
-                      "hover:border-purple-500/50 cursor-pointer",
+                      "border rounded-lg p-4 transition-all duration-300 flex flex-row justify-between gap-4 cursor-pointer",
                     )}
                   >
-                    {/* Degree and Institution */}
-                    <div className="mb-4">
-                      <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                        {item.role}
-                      </h3>
-                      <p className="text-gray-400 text-lg">
-                        {item.company} {item.location}
-                      </p>
-                    </div>
-                    {/* Learning */}
-                    {item.learning && (
+
+                    <div className="w-3/5 flex flex-col gap-4">
+                      {/* Role + Company */}
                       <div className="mb-4">
-                        <h4 className="text-xl font-semibold text-white mb-2">
-                          Learnings
-                        </h4>
+                        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                          {item.role}
+                        </h3>
+
                         <p className="text-gray-400 text-lg">
-                          {item.learning}
+                          {item.company} {item.location}
                         </p>
                       </div>
-                    )}
+
+                      {/* Learning */}
+                      {item.learning && (
+                        <div className="mb-4">
+                          <h4 className="text-xl font-semibold text-white mb-2">
+                            Responsibilities and Learnings
+                          </h4>
+
+                          <p className="text-gray-400 text-lg leading-relaxed">
+                            {item.learning}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Technologies */}
+                      {item.tech && (
+                        <div className="flex flex-wrap gap-2 mt-5">
+                          {item.tech.map((technology) => (
+                            <div
+                              key={technology.name}
+                              className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-700/60 bg-slate-800/30"
+                            >
+                              <img
+                                src={technology.icon}
+                                alt={technology.name}
+                                className="w-4 h-4"
+                              />
+
+                              <span className="text-sm text-gray-300">
+                                {technology.name}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                    </div>
+
+
+                    <div className="w-2/5 flex items-center">
+                      <div className="lg:sticky lg:top-24 lg:h-[calc(100vh-6rem)] lg:overflow-y-auto lg:scrollbar-thin lg:scrollbar-thumb-slate-700/50 lg:scrollbar-track-slate-900/50 w-full">
+
+
+                        <div
+                          className={cn(
+                            "rounded-xl overflow-hidden",
+                            "border border-slate-700/50",
+                            "bg-slate-950/50",
+                            "backdrop-blur-sm",
+                            "h-[540px]",
+                          )}
+                        >
+
+                          {/* Preview Header */}
+                          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-700/50">
+
+                            <div className="flex items-center gap-3">
+
+                              <div className="w-9 h-9 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                                <FileText
+                                  size={18}
+                                  className="text-purple-400"
+                                />
+                              </div>
+
+                              <div>
+                                <h3 className="text-white font-semibold">
+                                  Document Preview
+                                </h3>
+
+                                <p className="text-xs text-gray-500">
+                                  {item.company}
+                                </p>
+                              </div>
+
+                            </div>
+
+                            <a
+                              href={item.documents[0].url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-colors"
+                              title="Open PDF"
+                            >
+                              <ExternalLink size={17} />
+                            </a>
+
+                          </div>
+
+
+
+                          <div className="bg-slate-900 w-full">
+                            <iframe
+                              key={item.documents[0].url}
+                              src={`${item.documents[0].url}#toolbar=0&navpanes=0`}
+                              className="w-full h-[540px] border-none"
+                              title={item.documents[0].title}
+                            />
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
               </div>
             ))}
           </div>
-          <div
-            className="h-[50vh] md:h-[30rem] rounded-md
-flex flex-col antialiased items-center relative
-overflow-hidden"
-          >
-            <InfiniteMovingCards
-              items={testimonials}
-              direction="right"
-              speed="normal"
-            />
-          </div>
+
+
+        </div>
+        <div
+          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center relative overflow-hidden"
+        >
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="normal"
+          />
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
