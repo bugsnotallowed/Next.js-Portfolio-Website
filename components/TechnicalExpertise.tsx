@@ -8,7 +8,7 @@ import {certificates} from './data'
 interface Skill {
   name: string;
   icon: string;
-  category: 'languages' | 'webdev' | 'databases' | 'tools';
+  category: 'languages' | 'webdev' | 'databases' | 'Cloud Infrastructure & Networking';
   progress: number; // 0-100
   color: string;
 }
@@ -44,14 +44,15 @@ const TechnicalExpertise: React.FC = () => {
     { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg', category: 'databases', progress: 50, color: '#ef4444' },
     { name: 'ChromaDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chromadb/chromadb-original.svg', category: 'databases', progress: 50, color: '#3b82f6' },
     
-    // Tools
-    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg', category: 'tools', progress: 70, color: '#f97316' },
-    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg', category: 'tools', progress: 65, color: '#3b82f6' },
-    { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg', category: 'tools', progress: 50, color: '#fbbf24' },
-    { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg', category: 'tools', progress: 90, color: '#3b82f6' },
-    { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', category: 'tools', progress: 60, color: '#f59e0b' },
-    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg', category: 'tools', progress: 70, color: '#f97316' },
-    { name: 'Github', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: 'tools', progress: 80, color: '#000000' }
+    // Cloud Infrastructure & Networking
+    { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg', category: 'Cloud Infrastructure & Networking', progress: 60, color: '#f59e0b' },
+    { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg', category: 'Cloud Infrastructure & Networking', progress: 50, color: '#0078d4' },
+    { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg', category: 'Cloud Infrastructure & Networking', progress: 50, color: '#fbbf24' },
+    { name: 'Windows', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg', category: 'Cloud Infrastructure & Networking', progress: 50, color: '#0078d4' },
+    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg', category: 'Cloud Infrastructure & Networking', progress: 70, color: '#f97316' },
+    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg', category: 'Cloud Infrastructure & Networking', progress: 65, color: '#3b82f6' },
+    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg', category: 'Cloud Infrastructure & Networking', progress: 70, color: '#f97316' },
+    { name: 'Github', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: 'Cloud Infrastructure & Networking', progress: 80, color: '#000000' },
   ];
 
   // const certifications: Certification[] = [
@@ -132,7 +133,7 @@ const TechnicalExpertise: React.FC = () => {
           <CategorySection title="Languages" category="languages" />
           <CategorySection title="Web Development" category="webdev" />
           <CategorySection title="Databases" category="databases" />
-          <CategorySection title="Tools" category="tools" />
+          <CategorySection title="Cloud Infrastructure & Networking" category="Cloud Infrastructure & Networking" />
         </div>
         
         {/* Certifications Section */}

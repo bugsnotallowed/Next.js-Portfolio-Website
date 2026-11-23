@@ -185,6 +185,28 @@ export const projects = [
 
 export const experienceData = [
   {
+    id: 'Full Time',
+    period: 'Sep 2026 - Present',
+    role: 'Software Analyst - CIS (Cloud Infrastructure Services)',
+    company: 'Capgemini Technology Services India Limited -',
+    location: 'Airoli, Navi Mumbai, Maharashtra',
+    learning: 'Networking, Windows Administration, Linux Administration, AWS Cloud, Azure Cloud, DevOps, CI/CD, Docker, GitHub Actions, Security Best Practices, Incident Management, Troubleshooting and Debugging.',
+    documents: [
+      {
+        type: "Offer-letter",
+        title: "Full-Time Offer Letter",
+      }
+    ],
+    tech: [
+      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg" },
+      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+      { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" },
+      { name: "Windows", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" },
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+      { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+    ]
+  },
+  {
     id: 'Internship',
     period: 'Jan 2026 - Aug 2026',
     role: 'Software Development Engineer Intern',

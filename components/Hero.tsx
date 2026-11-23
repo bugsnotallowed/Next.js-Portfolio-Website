@@ -41,7 +41,7 @@ const Hero = () => {
               />
               <TextGenerateEffect
                 className="text-center lg:text-left text-[36px] md:text-4xl lg:text-5xl"
-                words="I'm Adarsh Gupta. A Full Stack Web Developer."
+                words="I'm Adarsh Gupta. A Software Engineer."
               />
 
               <p className="text-center lg:text-left md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

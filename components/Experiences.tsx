@@ -157,6 +157,7 @@ const Experiences = () => {
 
 
 
+                        {item.documents[0].url && (
                           <div className="bg-slate-900 w-full">
                             <iframe
                               key={item.documents[0].url}
@@ -165,7 +166,7 @@ const Experiences = () => {
                               title={item.documents[0].title}
                             />
                           </div>
-
+                        )}
                         </div>
                       </div>
                     </div>

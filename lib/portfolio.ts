@@ -7,11 +7,18 @@ export const portfolioData = {
       "Computer Engineering Graduate with experience building full-stack, blockchain, and AI-powered applications.",
   },
 
-  employment: {
-    current: true,
+  experience: {
+    current: false,
     company: "Information Data Systems Pvt Ltd",
     role: "Software Developer Engineer Intern",
     startDate: "2026-01-07",
+  },
+
+  employment: {
+    current: true,
+    company: "Capgemini Technology Services India Limited",
+    role: "Software Analyst",
+    startDate: "2026-09-03",
   },
 
   education: {
