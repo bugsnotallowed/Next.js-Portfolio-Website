@@ -195,6 +195,7 @@ export const experienceData = [
       {
         type: "Offer-letter",
         title: "Full-Time Offer Letter",
+        url: "/capgemini-offer-letter.pdf"
       }
     ],
     tech: [
